@@ -5,6 +5,7 @@ Imports System.Drawing.Printing
 
 
 Public Class PriceGraph
+    'This is a test
     Public Shared Actual As New Series
     Public Shared MA As New Series
     Public Shared MA2 As New Series
@@ -12,7 +13,6 @@ Public Class PriceGraph
     Public Shared SMI2 As New Series
     Public Shared bars As New Series
     Public Shared AllMAs As New Series
-    ' Public Shared txbars As New Series
     Public Shared barsnumber As Integer = 0
     Public Shared AdditionalSeries As New List(Of Series)
     Public Shared lastprice As Decimal
@@ -24,15 +24,11 @@ Public Class PriceGraph
         Dim newseries As New Series
         newseries.Name = value
         newseries.Color = RandomColor()
-        'Change to a line graph.
         newseries.ChartType = SeriesChartType.Line
         newseries.BorderWidth = 2
-        '  For index As Integer = 1 To 10
-
-
         AdditionalSeries.Add(newseries)
 
-        form1.chart1.Series.Add(AdditionalSeries(AdditionalSeries.Count - 1))
+        Form1.chart1.Series.Add(AdditionalSeries(AdditionalSeries.Count - 1))
 
     End Sub
 

@@ -1,0 +1,6 @@
+C:\Users\Colton\Desktop\BTC-Tracker\obj\Debug\BTC Tracker.vbprojResolveAssemblyReference.cache
+C:\Users\Colton\Desktop\BTC-Tracker\obj\Debug\Coinbase_tracker.Form1.resources
+C:\Users\Colton\Desktop\BTC-Tracker\obj\Debug\Coinbase_tracker.splash.resources
+C:\Users\Colton\Desktop\BTC-Tracker\obj\Debug\BTC Tracker.vbproj.GenerateResource.Cache
+C:\Users\Colton\Desktop\BTC-Tracker\obj\Debug\Coinbase_tracker.Resources.resources
+C:\Users\Colton\Desktop\BTC-Tracker\obj\Debug\BTC Tracker.vbproj.CoreCompileInputs.cache

@@ -201,9 +201,9 @@
   <ItemGroup>
     <Content Include="BTC.ico" />
     <Content Include="Calculate SMI.txt" />
-    <Content Include="Froyoshark-Enkel-Bitcoin.ico" />
-    <Content Include="Resources\TA-Lib-Core.dll" />
-    <None Include="Resources\IMG_2998.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

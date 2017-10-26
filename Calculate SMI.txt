@@ -1,0 +1,21 @@
+﻿Calculate the M - midpoint price of the highest high and the lowest low in the selected  range
+
+M = (HighMAX + LowMIN) /2
+
+where
+
+HighMAX = the highest high in the range
+LowMIN = the lowest low in the range
+Calculate the D - the difference of bar's closing price from the midpoint of the range:
+
+D = Close - M
+Calculate Ds - double Exponential Moving Average (MA) applied to D values calculated in the previous step
+
+Ds = MA(MA(D))
+Calculate Dhl - double Exponential Moving Average  applied to the difference between highest high and lowest low in the selected period:
+
+Dhl = MA(MA((HighMAX - LowMIN)))
+calculate SMI as ratio between Ds and Dhl
+
+SMI = 100 * (Ds / Dhl)
+The same as with Stochastics Oscillator, additional Signal Line is calculated as MA applied to the SMI.

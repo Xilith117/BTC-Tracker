@@ -7,8 +7,8 @@ Imports System.Net
 Imports System.Security.Cryptography
 Imports System.Text
 Imports System.Threading
-Imports Newtonsoft.Json
-Imports Newtonsoft.Json.Linq
+'Imports Newtonsoft.Json
+'Imports Newtonsoft.Json.Linq
 Imports System.Net.Mail
 Imports System.Windows.Forms
 Imports System.Collections.Specialized

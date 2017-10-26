@@ -4,3 +4,17 @@ C:\Users\Colton\Desktop\BTC-Tracker\obj\Debug\Coinbase_tracker.splash.resources
 C:\Users\Colton\Desktop\BTC-Tracker\obj\Debug\BTC Tracker.vbproj.GenerateResource.Cache
 C:\Users\Colton\Desktop\BTC-Tracker\obj\Debug\Coinbase_tracker.Resources.resources
 C:\Users\Colton\Desktop\BTC-Tracker\obj\Debug\BTC Tracker.vbproj.CoreCompileInputs.cache
+C:\Users\Colton\Desktop\BTC-Tracker\bin\Debug\BTC Tracker.exe.config
+C:\Users\Colton\Desktop\BTC-Tracker\bin\Debug\BTC Tracker.exe.manifest
+C:\Users\Colton\Desktop\BTC-Tracker\bin\Debug\BTC Tracker.application
+C:\Users\Colton\Desktop\BTC-Tracker\bin\Debug\BTC Tracker.exe
+C:\Users\Colton\Desktop\BTC-Tracker\bin\Debug\BTC Tracker.pdb
+C:\Users\Colton\Desktop\BTC-Tracker\bin\Debug\BTC Tracker.xml
+C:\Users\Colton\Desktop\BTC-Tracker\bin\Debug\System.Net.Http.dll
+C:\Users\Colton\Desktop\BTC-Tracker\bin\Debug\System.Net.Http.xml
+C:\Users\Colton\Desktop\BTC-Tracker\obj\Debug\BTC Tracker.TrustInfo.xml
+C:\Users\Colton\Desktop\BTC-Tracker\obj\Debug\BTC Tracker.exe.manifest
+C:\Users\Colton\Desktop\BTC-Tracker\obj\Debug\BTC Tracker.application
+C:\Users\Colton\Desktop\BTC-Tracker\obj\Debug\BTC Tracker.exe
+C:\Users\Colton\Desktop\BTC-Tracker\obj\Debug\BTC Tracker.xml
+C:\Users\Colton\Desktop\BTC-Tracker\obj\Debug\BTC Tracker.pdb

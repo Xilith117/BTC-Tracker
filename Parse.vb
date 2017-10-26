@@ -34,8 +34,9 @@
             lTemp = InStr(lSearch, sSearch, sStop)
             If lTemp > lSearch Then
                 GetBetween = Mid$(sSearch, lSearch, lTemp - lSearch)
-      
+
             End If
+
         End If
         Return GetBetween
     End Function

@@ -652,7 +652,6 @@ Partial Class Form1
         'SecToolStripMenuItem2
         '
         Me.SecToolStripMenuItem2.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.SecToolStripMenuItem2.BackgroundImage = Global.Coinbase_tracker.My.Resources.Resources.IMG_2998
         Me.SecToolStripMenuItem2.Name = "SecToolStripMenuItem2"
         Me.SecToolStripMenuItem2.Size = New System.Drawing.Size(107, 22)
         Me.SecToolStripMenuItem2.Text = "2.5Sec"

@@ -104,7 +104,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AI.vb" />
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="BittrexAPI.vb" />
     <Compile Include="Collections.vb" />

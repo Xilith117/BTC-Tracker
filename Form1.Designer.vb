@@ -23,19 +23,19 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim ChartArea7 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend7 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Title11 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
-        Dim Title12 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
-        Dim Title13 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
-        Dim ChartArea8 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend8 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Title14 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
-        Dim ChartArea9 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend9 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Title15 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Title1 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
+        Dim Title2 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
+        Dim Title3 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Title4 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
+        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Title5 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
@@ -168,25 +168,25 @@ Partial Class Form1
         '
         Me.DataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Lime
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView2.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Lime
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView2.DefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView2.Location = New System.Drawing.Point(0, 0)
         Me.DataGridView2.Name = "DataGridView2"
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView2.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView2.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridView2.RowHeadersVisible = False
         Me.DataGridView2.Size = New System.Drawing.Size(429, 199)
         Me.DataGridView2.TabIndex = 97
@@ -429,34 +429,34 @@ Partial Class Form1
         Me.Chart1.BackSecondaryColor = System.Drawing.Color.DimGray
         Me.Chart1.BorderlineColor = System.Drawing.Color.Black
         Me.Chart1.BorderlineWidth = 3
-        ChartArea7.AxisX.MajorGrid.LineColor = System.Drawing.Color.White
-        ChartArea7.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
-        ChartArea7.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        ChartArea7.AxisX.MinorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
-        ChartArea7.AxisX.TitleForeColor = System.Drawing.Color.White
-        ChartArea7.AxisX2.LineColor = System.Drawing.Color.Lime
-        ChartArea7.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White
-        ChartArea7.AxisX2.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
-        ChartArea7.AxisX2.TitleForeColor = System.Drawing.Color.Lime
-        ChartArea7.AxisY.IsStartedFromZero = False
-        ChartArea7.AxisY.LineColor = System.Drawing.Color.White
-        ChartArea7.AxisY.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
-        ChartArea7.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        ChartArea7.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
-        ChartArea7.AxisY.TitleForeColor = System.Drawing.Color.Lime
-        ChartArea7.AxisY2.IsStartedFromZero = False
-        ChartArea7.AxisY2.LineColor = System.Drawing.Color.Lime
-        ChartArea7.AxisY2.TitleForeColor = System.Drawing.Color.Lime
-        ChartArea7.BackColor = System.Drawing.Color.Black
-        ChartArea7.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom
-        ChartArea7.BackSecondaryColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(0, Byte), Integer))
-        ChartArea7.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid
-        ChartArea7.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea7)
+        ChartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.White
+        ChartArea1.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
+        ChartArea1.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        ChartArea1.AxisX.MinorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
+        ChartArea1.AxisX.TitleForeColor = System.Drawing.Color.White
+        ChartArea1.AxisX2.LineColor = System.Drawing.Color.Lime
+        ChartArea1.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White
+        ChartArea1.AxisX2.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
+        ChartArea1.AxisX2.TitleForeColor = System.Drawing.Color.Lime
+        ChartArea1.AxisY.IsStartedFromZero = False
+        ChartArea1.AxisY.LineColor = System.Drawing.Color.White
+        ChartArea1.AxisY.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
+        ChartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        ChartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
+        ChartArea1.AxisY.TitleForeColor = System.Drawing.Color.Lime
+        ChartArea1.AxisY2.IsStartedFromZero = False
+        ChartArea1.AxisY2.LineColor = System.Drawing.Color.Lime
+        ChartArea1.AxisY2.TitleForeColor = System.Drawing.Color.Lime
+        ChartArea1.BackColor = System.Drawing.Color.Black
+        ChartArea1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom
+        ChartArea1.BackSecondaryColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(0, Byte), Integer))
+        ChartArea1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea1)
         Me.Chart1.Cursor = System.Windows.Forms.Cursors.Default
         Me.Chart1.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend7.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend7)
+        Legend1.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend1)
         Me.Chart1.Location = New System.Drawing.Point(0, 0)
         Me.Chart1.Name = "Chart1"
         Me.Chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None
@@ -464,19 +464,19 @@ Partial Class Form1
         Me.Chart1.Size = New System.Drawing.Size(858, 339)
         Me.Chart1.TabIndex = 62
         Me.Chart1.Text = "Adjusted"
-        Title11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Title11.ForeColor = System.Drawing.Color.Lime
-        Title11.Name = "Title1"
-        Title11.Text = "Current Price"
-        Title12.Alignment = System.Drawing.ContentAlignment.TopLeft
-        Title12.Name = "Title2"
-        Title12.Text = "00:00:00 @ 2.5Sec"
-        Title13.Alignment = System.Drawing.ContentAlignment.TopLeft
-        Title13.Name = "Title3"
-        Title13.Text = "[0]"
-        Me.Chart1.Titles.Add(Title11)
-        Me.Chart1.Titles.Add(Title12)
-        Me.Chart1.Titles.Add(Title13)
+        Title1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Title1.ForeColor = System.Drawing.Color.Lime
+        Title1.Name = "Title1"
+        Title1.Text = "Current Price"
+        Title2.Alignment = System.Drawing.ContentAlignment.TopLeft
+        Title2.Name = "Title2"
+        Title2.Text = "00:00:00 @ 2.5Sec"
+        Title3.Alignment = System.Drawing.ContentAlignment.TopLeft
+        Title3.Name = "Title3"
+        Title3.Text = "[0]"
+        Me.Chart1.Titles.Add(Title1)
+        Me.Chart1.Titles.Add(Title2)
+        Me.Chart1.Titles.Add(Title3)
         '
         'Panel3
         '
@@ -494,35 +494,35 @@ Partial Class Form1
         Me.Chart3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Chart3.BorderlineColor = System.Drawing.Color.Black
         Me.Chart3.BorderlineWidth = 3
-        ChartArea8.AxisX.LineColor = System.Drawing.Color.Lime
-        ChartArea8.AxisX.MajorGrid.LineColor = System.Drawing.Color.White
-        ChartArea8.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
-        ChartArea8.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        ChartArea8.AxisX.MinorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
-        ChartArea8.AxisX.TitleForeColor = System.Drawing.Color.Lime
-        ChartArea8.AxisX2.LineColor = System.Drawing.Color.Lime
-        ChartArea8.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White
-        ChartArea8.AxisX2.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
-        ChartArea8.AxisX2.TitleForeColor = System.Drawing.Color.Lime
-        ChartArea8.AxisY.IsStartedFromZero = False
-        ChartArea8.AxisY.LineColor = System.Drawing.Color.White
-        ChartArea8.AxisY.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
-        ChartArea8.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        ChartArea8.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
-        ChartArea8.AxisY.TitleForeColor = System.Drawing.Color.Lime
-        ChartArea8.AxisY2.IsStartedFromZero = False
-        ChartArea8.AxisY2.LineColor = System.Drawing.Color.Lime
-        ChartArea8.AxisY2.TitleForeColor = System.Drawing.Color.Lime
-        ChartArea8.BackColor = System.Drawing.Color.Black
-        ChartArea8.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom
-        ChartArea8.BackSecondaryColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(0, Byte), Integer))
-        ChartArea8.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid
-        ChartArea8.Name = "ChartArea1"
-        Me.Chart3.ChartAreas.Add(ChartArea8)
+        ChartArea2.AxisX.LineColor = System.Drawing.Color.Lime
+        ChartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.White
+        ChartArea2.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
+        ChartArea2.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        ChartArea2.AxisX.MinorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
+        ChartArea2.AxisX.TitleForeColor = System.Drawing.Color.Lime
+        ChartArea2.AxisX2.LineColor = System.Drawing.Color.Lime
+        ChartArea2.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White
+        ChartArea2.AxisX2.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
+        ChartArea2.AxisX2.TitleForeColor = System.Drawing.Color.Lime
+        ChartArea2.AxisY.IsStartedFromZero = False
+        ChartArea2.AxisY.LineColor = System.Drawing.Color.White
+        ChartArea2.AxisY.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
+        ChartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        ChartArea2.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
+        ChartArea2.AxisY.TitleForeColor = System.Drawing.Color.Lime
+        ChartArea2.AxisY2.IsStartedFromZero = False
+        ChartArea2.AxisY2.LineColor = System.Drawing.Color.Lime
+        ChartArea2.AxisY2.TitleForeColor = System.Drawing.Color.Lime
+        ChartArea2.BackColor = System.Drawing.Color.Black
+        ChartArea2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom
+        ChartArea2.BackSecondaryColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(0, Byte), Integer))
+        ChartArea2.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid
+        ChartArea2.Name = "ChartArea1"
+        Me.Chart3.ChartAreas.Add(ChartArea2)
         Me.Chart3.Cursor = System.Windows.Forms.Cursors.Default
         Me.Chart3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Legend8.Name = "Legend1"
-        Me.Chart3.Legends.Add(Legend8)
+        Legend2.Name = "Legend1"
+        Me.Chart3.Legends.Add(Legend2)
         Me.Chart3.Location = New System.Drawing.Point(0, 162)
         Me.Chart3.Name = "Chart3"
         Me.Chart3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None
@@ -530,44 +530,44 @@ Partial Class Form1
         Me.Chart3.Size = New System.Drawing.Size(429, 177)
         Me.Chart3.TabIndex = 79
         Me.Chart3.Text = "Adjusted"
-        Title14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Title14.ForeColor = System.Drawing.Color.Lime
-        Title14.Name = "Title1"
-        Title14.Text = "Movement"
-        Me.Chart3.Titles.Add(Title14)
+        Title4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Title4.ForeColor = System.Drawing.Color.Lime
+        Title4.Name = "Title1"
+        Title4.Text = "Movement"
+        Me.Chart3.Titles.Add(Title4)
         '
         'Chart2
         '
         Me.Chart2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Chart2.BorderlineColor = System.Drawing.Color.Black
         Me.Chart2.BorderlineWidth = 3
-        ChartArea9.AxisX.LineColor = System.Drawing.Color.Lime
-        ChartArea9.AxisX.MajorGrid.LineColor = System.Drawing.Color.White
-        ChartArea9.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
-        ChartArea9.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        ChartArea9.AxisX.MinorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
-        ChartArea9.AxisX.TitleForeColor = System.Drawing.Color.Lime
-        ChartArea9.AxisX2.LineColor = System.Drawing.Color.Lime
-        ChartArea9.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White
-        ChartArea9.AxisX2.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
-        ChartArea9.AxisX2.TitleForeColor = System.Drawing.Color.Lime
-        ChartArea9.AxisY.IsStartedFromZero = False
-        ChartArea9.AxisY.LineColor = System.Drawing.Color.White
-        ChartArea9.AxisY.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
-        ChartArea9.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        ChartArea9.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
-        ChartArea9.AxisY.TitleForeColor = System.Drawing.Color.Lime
-        ChartArea9.AxisY2.IsStartedFromZero = False
-        ChartArea9.AxisY2.LineColor = System.Drawing.Color.Lime
-        ChartArea9.AxisY2.TitleForeColor = System.Drawing.Color.Lime
-        ChartArea9.BackColor = System.Drawing.Color.Black
-        ChartArea9.BackSecondaryColor = System.Drawing.Color.Lime
-        ChartArea9.Name = "ChartArea1"
-        Me.Chart2.ChartAreas.Add(ChartArea9)
+        ChartArea3.AxisX.LineColor = System.Drawing.Color.Lime
+        ChartArea3.AxisX.MajorGrid.LineColor = System.Drawing.Color.White
+        ChartArea3.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
+        ChartArea3.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        ChartArea3.AxisX.MinorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
+        ChartArea3.AxisX.TitleForeColor = System.Drawing.Color.Lime
+        ChartArea3.AxisX2.LineColor = System.Drawing.Color.Lime
+        ChartArea3.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White
+        ChartArea3.AxisX2.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
+        ChartArea3.AxisX2.TitleForeColor = System.Drawing.Color.Lime
+        ChartArea3.AxisY.IsStartedFromZero = False
+        ChartArea3.AxisY.LineColor = System.Drawing.Color.White
+        ChartArea3.AxisY.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
+        ChartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        ChartArea3.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash
+        ChartArea3.AxisY.TitleForeColor = System.Drawing.Color.Lime
+        ChartArea3.AxisY2.IsStartedFromZero = False
+        ChartArea3.AxisY2.LineColor = System.Drawing.Color.Lime
+        ChartArea3.AxisY2.TitleForeColor = System.Drawing.Color.Lime
+        ChartArea3.BackColor = System.Drawing.Color.Black
+        ChartArea3.BackSecondaryColor = System.Drawing.Color.Lime
+        ChartArea3.Name = "ChartArea1"
+        Me.Chart2.ChartAreas.Add(ChartArea3)
         Me.Chart2.Cursor = System.Windows.Forms.Cursors.Default
         Me.Chart2.Dock = System.Windows.Forms.DockStyle.Top
-        Legend9.Name = "Legend1"
-        Me.Chart2.Legends.Add(Legend9)
+        Legend3.Name = "Legend1"
+        Me.Chart2.Legends.Add(Legend3)
         Me.Chart2.Location = New System.Drawing.Point(0, 0)
         Me.Chart2.Name = "Chart2"
         Me.Chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None
@@ -575,11 +575,11 @@ Partial Class Form1
         Me.Chart2.Size = New System.Drawing.Size(429, 177)
         Me.Chart2.TabIndex = 78
         Me.Chart2.Text = "Adjusted"
-        Title15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Title15.ForeColor = System.Drawing.Color.Lime
-        Title15.Name = "Title1"
-        Title15.Text = "SMI"
-        Me.Chart2.Titles.Add(Title15)
+        Title5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Title5.ForeColor = System.Drawing.Color.Lime
+        Title5.Name = "Title1"
+        Title5.Text = "SMI"
+        Me.Chart2.Titles.Add(Title5)
         '
         'ResponseBox
         '
@@ -628,38 +628,38 @@ Partial Class Form1
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(107, 22)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem2.Text = "10Min"
         '
         'MinToolStripMenuItem
         '
         Me.MinToolStripMenuItem.Name = "MinToolStripMenuItem"
-        Me.MinToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
+        Me.MinToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.MinToolStripMenuItem.Text = "1Min"
         '
         'SecToolStripMenuItem
         '
         Me.SecToolStripMenuItem.Name = "SecToolStripMenuItem"
-        Me.SecToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
+        Me.SecToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SecToolStripMenuItem.Text = "30Sec"
         '
         'SecToolStripMenuItem1
         '
         Me.SecToolStripMenuItem1.Name = "SecToolStripMenuItem1"
-        Me.SecToolStripMenuItem1.Size = New System.Drawing.Size(107, 22)
+        Me.SecToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.SecToolStripMenuItem1.Text = "5Sec"
         '
         'SecToolStripMenuItem2
         '
         Me.SecToolStripMenuItem2.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.SecToolStripMenuItem2.Name = "SecToolStripMenuItem2"
-        Me.SecToolStripMenuItem2.Size = New System.Drawing.Size(107, 22)
+        Me.SecToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
         Me.SecToolStripMenuItem2.Text = "2.5Sec"
         '
         'SecToolStripMenuItem3
         '
         Me.SecToolStripMenuItem3.Name = "SecToolStripMenuItem3"
-        Me.SecToolStripMenuItem3.Size = New System.Drawing.Size(107, 22)
+        Me.SecToolStripMenuItem3.Size = New System.Drawing.Size(152, 22)
         Me.SecToolStripMenuItem3.Text = "1.5Sec"
         '
         'ErrorLabel
@@ -713,7 +713,7 @@ Partial Class Form1
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Form1"
-        Me.Opacity = 0.0R
+        Me.Opacity = 0R
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.Text = "Colton's BTC AutoTrader  v1.11"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

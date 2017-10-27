@@ -6,13 +6,13 @@ Public Class Form1
     Dim ResponseAsString As String
     Dim APIkey As String = "112dd3b194de4fe799b5417705b154ba"
     Public TestWalletValues As New List(Of Currency)
-    ' Dim elapsedTicks As Long = currentDate.Ticks - centuryBegin.Ticks
-    ' Dim elapsedSpan As New TimeSpan(elapsedTicks)
     Dim WithEvents mPrintDocument As New Printing.PrintDocument
     Dim mPrintBitMap As Bitmap
     Dim timestart As DateTime
     Dim elapsedtime As TimeSpan
     Dim SelectedInterval As String = "2.5Sec"
+    Dim row As String()
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TableLayoutPanel1.Top = Me.Top + 32
         TableLayoutPanel1.Height = Me.Height - 84
@@ -20,35 +20,25 @@ Public Class Form1
         timestart = My.Computer.Clock.LocalTime
     End Sub
 
-    Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
-
-    End Sub
-
     Private Sub UpdateValueGrid()
-        'Try
         Dim j As Integer = 3
         If DataGridView2.Columns.Count = 0 Then
 
             DataGridView2.ColumnCount = j
             DataGridView2.Columns(0).Name = "Actual"
-
             DataGridView2.Columns(1).Name = "Ѻ"
-
-            ' DataGridView2.Columns(2).Name = "40"
             DataGridView2.Columns(2).Name = "AllMAs"
 
-            Dim row As String() = New String() {PriceGraph.Actual.Points.Last.YValues(0), PriceGraph.MA2.Points.Last.YValues(0), PriceGraph.AllMAs.Points.Last.YValues(0)}
+            row = New String() {PriceGraph.Actual.Points.Last.YValues(0), PriceGraph.MA2.Points.Last.YValues(0), PriceGraph.AllMAs.Points.Last.YValues(0)}
             DataGridView2.Rows.Add(row)
 
         Else
-            Dim row As String() = New String() {PriceGraph.Actual.Points.Last.YValues(0), PriceGraph.MA2.Points.Last.YValues(0), PriceGraph.AllMAs.Points.Last.YValues(0)}
+            row = New String() {PriceGraph.Actual.Points.Last.YValues(0), PriceGraph.MA2.Points.Last.YValues(0), PriceGraph.AllMAs.Points.Last.YValues(0)}
 
 
             DataGridView2.Rows.Add(row)
 
         End If
-
-
 
 
         For Each moo As System.Windows.Forms.DataVisualization.Charting.Series In PriceGraph.AdditionalSeries
@@ -60,16 +50,11 @@ Public Class Form1
 
             End If
         Next
-        '   Catch 
-        ErrorLabel.Text = "UpdateValueGrid"
 
-        ' End Try
+
     End Sub
     Private Sub Button7_Click(sender As Object, e As EventArgs)
-        '   BittrexAPI.market_getmarketsummaries()
         Timer1.Enabled = True
-
-
 
     End Sub
 
@@ -90,8 +75,6 @@ Public Class Form1
 
         UpdateValueGrid()
     End Sub
-
-
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
         TextBox2.Text = DataGridView1.CurrentCell.Value.ToString
@@ -116,7 +99,6 @@ Public Class Form1
 
         BittrexAPI.PlaceOrder(TextBox2.Text, PriceTextBox.Text, TextBox4.Text, True)
 
-
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs)
@@ -124,7 +106,6 @@ Public Class Form1
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        '  currentDate = Date.Now
 
         BittrexAPI.market_getCurrencies()
         BittrexAPI.GetBalances()
@@ -133,16 +114,9 @@ Public Class Form1
         Chart1.Top = Me.Height - Chart1.Height - StatusStrip1.Height - 45
         DataGridView1.Height = Chart1.Top - 35
         ResponseBox.Top = Chart1.Top
-        '  ActionsBox.Height = (DataGridView1.Height / 2) - 20
-        '  ActionsBox.Width = Me.Width - DataGridView1.Width - 50
-        ' ActionsBox.Left = Me.Width - ActionsBox.Width - 30
         ResponseBox.Width = Me.Width - DataGridView1.Width - 50
         ResponseBox.Left = Me.Width - ActionsBox.Width - 30
 
-
-    End Sub
-
-    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -166,27 +140,27 @@ Public Class Form1
         PriceGraph.Addpoint(PriceGraph.Actual, My.Computer.Clock.TickCount, 7)
     End Sub
 
-    Private Sub SecToolStripMenuItem3_Click(sender As Object, e As EventArgs)
+    Private Sub SecToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles SecToolStripMenuItem3.Click
         Timer1.Interval = 1500
     End Sub
 
-    Private Sub SecToolStripMenuItem2_Click(sender As Object, e As EventArgs)
+    Private Sub SecToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles SecToolStripMenuItem2.Click
         Timer1.Interval = 2500
     End Sub
 
-    Private Sub SecToolStripMenuItem1_Click(sender As Object, e As EventArgs)
+    Private Sub SecToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles SecToolStripMenuItem1.Click
         Timer1.Interval = 5000
     End Sub
 
-    Private Sub SecToolStripMenuItem_Click(sender As Object, e As EventArgs)
+    Private Sub SecToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SecToolStripMenuItem.Click
         Timer1.Interval = 30000
     End Sub
 
-    Private Sub MinToolStripMenuItem_Click(sender As Object, e As EventArgs)
+    Private Sub MinToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MinToolStripMenuItem.Click
         Timer1.Interval = 60000
     End Sub
 
-    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs)
+    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
         Timer1.Interval = 600000
     End Sub
 
@@ -195,31 +169,22 @@ Public Class Form1
     End Sub
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
-
+        Dim printpreviewdialog1 As New PrintPreviewDialog
         Dim pr As Printing.PrintDocument = Chart1.Printing.PrintDocument
+
         Chart1.BackColor = Color.White
         Chart1.ChartAreas.First.BackColor = Color.White
         Chart1.ChartAreas.First.BorderColor = Color.Black
         Chart1.BorderlineColor = Color.Black
-
         Chart1.ChartAreas.First.BackSecondaryColor = Color.White
-        'Chart1.Printing.PrintPreview()
+
         pr.DefaultPageSettings.Landscape = True
-
-
-
-        Dim printpreviewdialog1 As New PrintPreviewDialog
         printpreviewdialog1.Document = pr
-
-        ' printpreviewdialog1.ShowDialog()
-        'Chart1.Printing.Print(True)
-        'pr.DefaultPageSettings.Landscape = True
         pr.Print()
+
         Chart1.BackColor = Color.FromArgb(64, 64, 64)
         Chart1.ChartAreas.First.BackColor = Color.Black
         Chart1.ChartAreas.First.BackSecondaryColor = Color.FromArgb(0, 45, 0)
-
-
 
     End Sub
 
@@ -323,10 +288,6 @@ Public Class Form1
 
         Next
 
-
-
-        '   HScrollBar1.Maximum = PriceGraph.Actual.Points.Count - 1
-        ' HScrollBar1.Width = Chart1.ChartAreas(0).Position.Width
     End Sub
 
     Private Sub ClearAll()
@@ -338,26 +299,10 @@ Public Class Form1
         PriceGraph.SMI2.Points.Clear()
         PriceGraph.AllMAs.Points.Clear()
 
-
-        'For Each potato As DataGridViewRow In DataGridView2.Rows
-        '    DataGridView1.Rows.RemoveAt(0)
-        'Next
         For Each item As DataVisualization.Charting.Series In PriceGraph.AdditionalSeries
             item.Points.Clear()
         Next
     End Sub
-
-
-    'Private Sub graphMax_TextChanged(sender As Object, e As EventArgs) Handles graphMax.TextChanged
-    '    Dim newseries As Charting.Series = PriceGraph.Actual
-
-    '    For x As Integer = 0 To graphMax.Text - 1
-    '        newseries.Points.RemoveAt(x)
-    '    Next
-
-    '    PriceGraph.Actual.Enabled = False
-    '    PriceGraph.AdditionalSeries.Add(newseries)
-    'End Sub
 
     Private Sub Button2_Click_2(sender As Object, e As EventArgs) Handles Button2.Click
         ExportDGVToCSV(False)
@@ -387,5 +332,8 @@ Public Class Form1
         Next intX
         sr.Close()
         MsgBox("ok")
+
     End Sub
+
+
 End Class

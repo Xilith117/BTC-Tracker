@@ -7,8 +7,6 @@ Imports System.Net
 Imports System.Security.Cryptography
 Imports System.Text
 Imports System.Threading
-'Imports Newtonsoft.Json
-'Imports Newtonsoft.Json.Linq
 Imports System.Net.Mail
 Imports System.Windows.Forms
 Imports System.Collections.Specialized
@@ -36,31 +34,18 @@ Public Class BittrexAPI
 
         End If
 
-
-
         Dim request = WebRequest.Create("https://bittrex.com/api/v1.1/")
-
-
-
-
-        Dim hmAcSha = New HMACSHA512(Encoding.ASCII.GetBytes(secret))
+        Dim hmAcSha = New HMACSHA512(Encoding.ASCII.GetBytes(Secret))
         Dim URIbyte = Encoding.ASCII.GetBytes(URI)
         Dim hashmessage = hmAcSha.ComputeHash(URIbyte)
         Dim sign = BitConverter.ToString(hashmessage)
-        sign = sign.Replace("-", "")
-
         Dim client As New WebClient()
+
+        sign = sign.Replace("-", "")
         client.Headers.Add("apisign", sign)
-
-        ' Form1.TextBox1.Text = URI = URI
         ResponseAsString = client.DownloadString(URI)
-
         ResponseAsString = ResponseAsString.Replace("""", "")
-
-        'Collections.MarketSummaryList = 
-
-
-        form1.responseBox.Text = ResponseAsString
+        Form1.ResponseBox.Text = ResponseAsString
 
 
         Return ResponseAsString
@@ -69,27 +54,23 @@ Public Class BittrexAPI
 
     Public Shared Sub account_getbalance()
 
-        form1.responseBox.Text = BittrexAPI.APIRequest("getbalance", "ETH")
+        Form1.ResponseBox.Text = BittrexAPI.APIRequest("getbalance", "ETH")
     End Sub
 
     Public Shared Sub account_getorderhistory()
 
-        form1.responseBox.Text = BittrexAPI.APIRequest("getorderhistory", "ETH")
+        Form1.ResponseBox.Text = BittrexAPI.APIRequest("getorderhistory", "ETH")
         Parse.ParseText(BittrexAPI.APIRequest("getorderhistory", "ETH"))
     End Sub
 
     Public Shared Sub market_getmarkets()
-        form1.responseBox.Text = BittrexAPI.APIRequest("public/getmarkets")
 
+        Form1.ResponseBox.Text = BittrexAPI.APIRequest("public/getmarkets")
     End Sub
     Public Shared Sub market_getTicker()
-        form1.responseBox.Text = BittrexAPI.APIRequest("public/getticker")
 
+        Form1.ResponseBox.Text = BittrexAPI.APIRequest("public/getticker")
     End Sub
-
-
-
-
 
     Public Shared Sub market_getmarketsummaries()
 
@@ -117,10 +98,6 @@ Public Class BittrexAPI
 
             Next
 
-
-
-
-
             If Collections.OldMarketSummaryList.Count = 0 Then
 
 
@@ -140,8 +117,6 @@ Public Class BittrexAPI
 
                 Dim y As Integer = 0
                 For Each item As MarketSummary In Collections.MarketSummaryList
-
-
 
                     Dim row As String() = New String() {item.MarketName, item.High, item.Low, item.Volume, item.Last, item.BaseVolume, item.Bid, item.Ask}
                     Form1.DataGridView1.Rows.Add(row)
@@ -186,10 +161,6 @@ Public Class BittrexAPI
             Form1.ConnectionLabel.ForeColor = Color.Red
         End Try
 
-
-
-
-
     End Sub
     Public Shared Sub GetBalances()
 
@@ -210,15 +181,9 @@ Public Class BittrexAPI
 
             Collections.BalanceList.Add(NewWallet)
 
-
-
         Next
 
-
-
     End Sub
-
-
 
     Public Shared Sub PlaceOrder(Market As String, Price As Double, Amount As Double, IsBuy As Boolean)
         Dim NewOrder As New Order
@@ -236,14 +201,9 @@ Public Class BittrexAPI
         End With
         Collections.OrderList.Add(NewOrder)
 
-
-
     End Sub
 
-
-
     Public Shared Sub market_getCurrencies()
-        '  Form2.TextBox1.Text = 
 
         For Each item As String In Parse.ParseText(BittrexAPI.APIRequest("public/getcurrencies"))
             Dim NewCurrency As New Currency
@@ -262,8 +222,6 @@ Public Class BittrexAPI
         Next
 
 
-
     End Sub
 
-  
 End Class
